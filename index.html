@@ -1,0 +1,478 @@
+<!-- PLEASE DO READ THE NOTE GIVEN AT SCRIPT TAG -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ...........................bootstrap css cdn................................... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/index.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body class="bod">
+  <!-- ....................................search-division........................................ -->
+    <nav class="sb-topnav navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <form class="d-flex main">
+          <a class="navbar-brand" style="color: white;">Following <span><i class="fas fa-heart"></i></span></a>
+          <div class="box d-flex">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="13.772" height="13.772" viewBox="0 0 13.772 13.772"><defs><style>.a{fill:#4d6072;}</style></defs><path class="a" d="M11.517,9.685a5.446,5.446,0,1,0-1.833,1.832l3.7,3.7,1.833-1.833Zm-4.643.551a3.36,3.36,0,1,1,3.361-3.358,3.365,3.365,0,0,1-3.361,3.358Z" transform="translate(-1.44 -1.44)"/></svg></span>
+          <input type="search" placeholder="Search.." aria-label="Search">
+          </div>
+          <button class="btn" id="search-top" type="submit">Search</button>
+        </form>
+        <span class="navbar-text"><i class="fas fa-bell"></i></span>
+      </div>
+    </nav>
+    <div class="container-fluid" id="layout" >
+      <!-- ............................................Side nav.......................................... -->
+      <div id="side-nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><img style="border-radius: 50px;" class="profile"src="public/profile.png" alt=""><Span class="name"> Ojas Singh</Span></div>
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-th-large"></i></span><span class="name"> Dashboard</span></div>
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-user"></i></span><span class="name"> Candidates</span></div>
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-briefcase"></i></span><span class="name"> Job</span></div>
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-envelope"></i></span><span class="name"> Mailbox</span></div>
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><span class="icon"><i class="far fa-clipboard"></i></span><span class="name"> Reports</span></div>
+              </a>
+            </div>
+          </div>
+          <div class="sb-sidenav-footer">
+            <a class="nav-link" href="#">
+              <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-user"></i></span><span class="name"> Accounts</span></div>
+            </a>
+            <a class="nav-link" href="#">
+              <div class="sb-nav-link-icon"><span class="icon"><i class="fas fa-sign-out-alt"></i></span><span class="name"> Logout</span></div>
+            </a>
+        </div>
+        </nav>
+      </div>
+      <div id="main-content" class="main-content" style="justify-content: start;">
+        <!-- ....................................nav-1.................................................. -->
+        <div id="in-nav1">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Senior Marketer(Sample) <span class="p">Remote Job</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText1" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                  <li class="nav-item">
+                    <div class="box1"><div class="in"><span class="name">Qualified</span><span class="num"> 7</span></div></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="box2"><div class="in2"><span class="name">Disqualified</span><span class="num"> 1</span></div></div>
+                  </li>
+                </ul>
+                <span class="d-flex" style="align-items: center;" id="flex">
+                  <span><img src="public/add.png" alt="" ></span>
+                  <span><img src="public/profile.png" width="28" style="border-radius: 50px;" alt=""></span>
+                  <span>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Following
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">options</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- ....................................nav-2..................................................... -->
+        <div id="in-nav2">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item item">
+                    <a class="nav-link" href="#">PIPELINE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FILTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ACTIVITY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NOTES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FILE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PRMOTE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">REPORTS</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <span><i class="far fa-eye"></i> VIEW</span>
+                  <span><i class="fas fa-share-alt"></i> SHARE</span>
+                  <span><i class="far fa-edit"></i> EDIT</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="sub">
+          <div class="row row-cols-1 row-cols-md-5 g-2   main-row d-flex">
+            <div class="col column">
+              <div class="card cards h-100 text-center" id="card">
+                <div class="card-body main-body">
+                  <h5 class="card-title name"><span class="online"><i class="fas fa-circle"></i></span>Applied(0)</h5>
+                  <div class="card text-center card-in">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #6048F6;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>100%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer ">
+                      <div class="row">
+                        <div class="col col-md8 d-flex text-start" style="align-items: center; padding:0 0 0 0;">
+                          <span><i class="far fa-calendar"></i></span>
+                          <span><i class="far fa-bookmark"></i></span>
+                          <span><i class="far fa-thumbs-up"></i></span>
+                          <span><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="col col-md-3 text-end" ><span><i class="fas fa-ban"></i></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col column">
+              <div class="card cards h-100 text-center" id="card">
+                <div class="card-body main-body">
+                  <h5 class="card-title name"><span class="online"><i class="fas fa-circle"></i></span>Phone interview(0)</h5>
+                  <div class="card text-center card-in">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #6048F6;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col column">
+              <div class="card cards h-100 text-center" id="card">
+                <div class="card-body main-body">
+                  <h5 class="card-title name"><span class="online"><i class="fas fa-circle"></i></span>On-site interview(1)</h5>
+                  <div class="card text-center card-in">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #DADEE2;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-center card-in" style="margin-top: 10;">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #DADEE2;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col column">
+              <div class="card cards h-100 text-center" id="card">
+                <div class="card-body main-body">
+                  <h5 class="card-title name"><span class="online"><i class="fas fa-circle"></i></span>Evalution(3)</h5>
+                  <div class="card text-center card-in">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #DADEE2;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-center card-in" style="margin-top: 10;">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #DADEE2;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-center card-in" style="margin-top: 10;">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #DADEE2;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col column">
+              <div class="card cards h-100 text-center" id="card">
+                <div class="card-body main-body">
+                  <h5 class="card-title name"><span class="online"><i class="fas fa-circle"></i></span>Offer(1)</h5>
+                  <div class="card text-center card-in">
+                    <div class="card-body cardin-body">
+                      <div class="row row1">
+                        <div class="col d-flex justify-text-start"><span style="color: #6048F6;"><i class="fas fa-bookmark"></i></span></div>
+                      </div>
+                      <div class="row row2">
+                        <div class="col d-flex" style="align-items: center;">
+                          <img src="public/profile.png" style="border-radius: 50px; margin-right: 10;" alt="">
+                           <span>Pipeline Filter</span>
+                        </div>
+                      </div>
+                      <div class="row row3">
+                        <div class="col col-md-8 text-start"><p>Candidate Profile</p></div>
+                        <div class="col col-md-4 text-end"><p>40%</p></div>
+                      </div>
+                      <div class="row row4">
+                        <div class="col col-md-12">
+                          <div class="progress">
+                            <div class="progress-bar w-70" role="progressbar" aria-valuenow="40" style="width: 40%;" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row5">
+                        <div class="col text-start">
+                          <div class="line"></div>
+                          <span><i style="font-size: 12px;" class="far fa-clock"></i> 21d</span>
+                          <span><i style="font-size: 12px;" class="far fa-comment-alt"></i> 4</span>
+                          <span> <i style="font-size: 12px;" class="fas fa-check"></i>4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+
+<!-- .......................bootstrap JS cdn........................................... -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- .........................jquery................................................. -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- 
+  The JS code below will tranform the search buttton into
+  search icon with the screen resolution is below 360px,
+  NOTE: while cheking in PC please to refresh to apply the 
+  JS changes.
+ -->
+
+<script>
+  $(document).ready(function(){
+    if($(window).width()<360){
+      $("#search-top").html("<span><i class='fas fa-search'></i></span>");
+      $("#search-top").css({"padding":"0 0 0 10"});
+    }
+  })
+</script>
+</html>
